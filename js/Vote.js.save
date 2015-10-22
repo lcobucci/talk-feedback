@@ -1,0 +1,8 @@
+(function(Backbone, ) {
+    var Vote = Backbone.Model.extend({
+    });
+
+    var VoteCollection = Backbone.Collection.extend({
+        model: Vote
+    });
+})(Backbone);

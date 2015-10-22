@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <title>Lecture feedback</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+   </head>
+   <body>
+        <div id="main" class="container-fluid"></div>
+        <script id="main-template" type="text/template">
+            <section id="reset"></section>  
+            <section id="voting"></section>  
+        </script>
+
+        <script id="reset-template" type="text/template">
+            <div class="row">
+                <div class="col-xs-2 col-xs-offset-10"><button class="btn btn-sm btn-danger pull-right">reset</button></div>
+            </div>  
+        </script>
+
+        <script id="voting-template" type="text/template">
+            <div class="row">
+                <div id="green" class="col-xs-4 voting-area" style="height: 300px; text-align: center; background-color: green;"><%= green %></div>
+                <div id="yellow" class="col-xs-4 voting-area"center-block style="height: 300px; text-align: center; background-color: yellow"><%= yellow %></div>
+                <div id="red" class="col-xs-4 voting-area" style="height: 300px; text-align: center; background-color: red; color: white"><%= red %></div>
+            </div>  
+        </script>
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://underscorejs.org/underscore-min.js"></script>
+        <script src="http://backbonejs.org/backbone-min.js"></script>
+        <script src="http://marionettejs.com/downloads/backbone.marionette.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="js/Vote.js"></script>
+        <script src="js/Views.js"></script>
+        <script src="js/App.js"></script>
+   </body>
+</html>
