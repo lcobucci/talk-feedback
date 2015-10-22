@@ -33,6 +33,7 @@
 
         initialize: function(options) {
             this.votes = options.votes;
+            console.log(this.model);
         },
 
         ui: {
@@ -41,6 +42,10 @@
 
         events: {
             "click @ui.votingArea": "vote"
+        },
+
+        modelEvents: {
+            'change': 'render'
         },
         
         vote: function(event) {

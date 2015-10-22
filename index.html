@@ -23,11 +23,11 @@
         </script>
 
         <script id="voting-template" type="text/template">
-            <div class="row">
-                <div id="green" class="col-xs-4 voting-area" style="height: 300px; text-align: center; background-color: green;"><%= green %></div>
-                <div id="yellow" class="col-xs-4 voting-area"center-block style="height: 300px; text-align: center; background-color: yellow"><%= yellow %></div>
-                <div id="red" class="col-xs-4 voting-area" style="height: 300px; text-align: center; background-color: red; color: white"><%= red %></div>
-            </div>  
+            <div class="row" style="margin-top:10px">
+                <div class="col-xs-4"><button id="green" class="btn btn-success btn-lg voting-area" style="width:100%; height: 200px"><%= green %></button></div>
+                <div class="col-xs-4"><button id="yellow" class="btn btn-warning btn-lg voting-area" style="width:100%; height: 200px"><%= yellow %></button></div>
+                <div class="col-xs-4"><button id="red" class="btn btn-danger btn-lg voting-area" style="width:100%; height: 200px"><%= red %></button></div>
+            </button>  
         </script>
 
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
